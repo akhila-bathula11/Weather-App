@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix | Movies & Tv Shows</title>
+    <!----React Libraries-->
+    <script src="./node_modules/react/umd//react.development.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+<!--Babel Libraries-->
+ <script src="./node_modules/@babel/standalone/babel.js"></script>
+<!---virtual dom-->
+<script type="text/babel">
+    const root=ReactDOM.createRoot(document.getElementById("root"));
+  root.render("</NetflixIndex/>");
+
+
+
+</script>
+
+
+</head>
+<body>
+    <button onclick="VolumeClick()" >Volume Up</button>
+   <noscript>Please enable java script on your browswer.</noscript>
+   <div id="root"></div>
+</body>
+</html>
+ // var list1=[10,20];
+    // var list2=[40,30];
+    // var list3=[...list1,...list2]; 
+    // console.log(list3);
+    
+//     function Details(...product)
+//     {
+//       var[id,name,price,stock]=product;
+//       document.write(`Id=${id}<br>Name=${name}<br>Price=${price}<br>stock=${stock}`);
+
+//     }
+//     var product=[1,"Loavi",56000,true];
+//     Details(...product);
+
+// function FetchData(url,success,failure){
+//     if(url=="server.com"){
+//         success([{Name:'tv'},{Name:'Mobiile'}]);
+//     }else{
+//         failure("Invalid Url");
+//     }
+// }
+// FetchData(prompt("Enter Url"),function(response){
+//     console.log(response);
+// },function(error){
+//     console.log(error);
+// })
+
+
+/*var FetchData=new Promise(function(resolve,reject){
+    var url=prompt("Enter url");
+    if(url=="server.com"){
+        resolve([{Name:'tv'},{Name:'Mobiile'}])
+    }
+    else{
+        reject("Invalid Url");
+    }
+
+})
+FetchData.then(function(response){
+    console.log(response);
+}).catch(function(error){
+    console.log(error);
+}).finally(function(){
+    console.log('Program');
+})*/
+// Closure Ex:
+// function Outer(){
+//     var x=10;
+//     function Inner(){
+//         var y=20;
+//         return x+y;
+//     }
+//     console.log(`Addition=${Inner()}`);
+// }
+// Outer();
+
+//Function Chainng
+
+// var str="Akhila";
+// document.write(str.fontsize(6).fontcolor('red').bold());
+
+/*function Demo(){
+    return{
+       A(){
+        console.log("A");
+        return this; //it is return to parent memory stored in heap as object Current object is Demo
+       } ,
+       B(){
+ console.log("B");
+        return this;
+       },
+       c(){
+           console.log("C");
+        return this;
+       }
+    }
+}
+Demo().A();
+Demo().B().A();
+Demo().C().A().B();*/
+
+
+// let users=Promise.resolve(['user1','user2'])
+// let products=Promise.resolve(['product1','product2']);
+// Promise.all([users,products]).then(function(response){
+//     console.log(response);
+// })
+
+// function Level1(){
+//     document.querySelector("p").innerHTML="Volume incresed by 30%";
+    
+// }
+// function Level2(){
+//     document.querySelector("p").innerHTML="Volume incresed by 70%";
+
+// }
+// function Level3(){
+//     document.querySelector("p").innerHTML="Volume full";
+
+// }
+// function VolumeClick(){
+//   setTimeout(Level1,4000);
+//   setTimeout(Level2,8000);
+//   setTimeout(Level3,12000);
+
+// }
